@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void appendFunctionFileString(string file, string data = "")  // And create new file if does not exist.
+int appendFunctionFileString(string file, string data = "")  // And create new file if does not exist.
 {
     ofstream outfile(file.c_str(), ios_base::app);
     if (!outfile) {
@@ -14,6 +14,7 @@ void appendFunctionFileString(string file, string data = "")  // And create new 
         outfile << data;
         outfile.close();
     }
+return 0; // Ok.
 }
 
 int main()
