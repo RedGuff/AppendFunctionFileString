@@ -8,7 +8,7 @@ int appendFunctionFileString(string file, string data = "")  // And create new f
 {
     ofstream outfile(file.c_str(), ios_base::app);
     if (!outfile) {
-        cerr << "Error Opening File " << file << "!" << endl;
+        cerr << "Error: Imossible to write in the file " << file << "!" << endl;
         return -1;
     } else {
         outfile << data;
